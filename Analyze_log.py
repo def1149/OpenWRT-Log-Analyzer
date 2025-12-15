@@ -1,13 +1,12 @@
 # ------------------------------------------------------------------------
-#
 # OpenWRT Log Analyzer 
 # Version 0.1
 # Synoposis: Process the OpenWRT system log file looking for problems.
 #            Output two CSV files with results of the analysis.
 #
 # Python Script created with the use of ChatGPT 
-# WARNING: I'm not an OpenWRT expert. The output may contain halucinations
-# 
+# WARNING: I'm not an OpenWRT or Python expert. The output may contain bugs and hallucinations
+#          Only tested with the system log from a GL.iNet GL-MT6000
 # ------------------------------------------------------------------------
 
 
@@ -163,3 +162,6 @@ with open(SUMMARY_CSV, "w", newline="", encoding="utf-8") as f:
 print("Audit complete.")
 print(f"- {AUDIT_CSV}")
 print(f"- {SUMMARY_CSV}")
+
+# ---- EOF ----
+
